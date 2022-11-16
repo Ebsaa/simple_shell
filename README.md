@@ -140,14 +140,12 @@ ENV_VARIABLE is substitued with its value.
 Eg.
 $echo "echo $PWD" | ./hsh
 /home/projects/alx/simple_shell
-
 $?
 
 ? is substituted with the return value of the last project executed.
 Eg.
 $ echo "echo $?" | ./hsh
 0
-
 $$
 
 The second $ is substituted with the current process ID.
@@ -201,6 +199,7 @@ cd
 ~If the argument - is given, the command is interpreted  as cd $OLDPWD and the path name of the new working Directory is printed to stdout.
 
 Eg:
+
 $ ./hsh
 $ pwd
 /home/projects/alx/simple_shell
@@ -253,6 +252,7 @@ unsetenv
 Usage: unseten [VARIABLE]
 ~Removes an environmental variables
 ~Upon failure, prints a message to stderr
+
 Eg:
 $ ./hsh
 $ setenv NAME Poppy
